@@ -1,0 +1,412 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>Reach out</title>
+
+    <!-- Template CSS -->
+    <link rel="stylesheet" href="assets/css/style-starter.css">
+    <style>
+    
+     .dark #wht:hover{
+        color: white;
+      }
+      .dark form{
+          background:rgba(22,22,37,1);
+          border:none;
+          color:black;
+      }
+      .dark .w3l-contact .contact-grids input, .w3l-contact .contact-grids textarea {
+          background:white;
+          color:black;
+      }
+      .theme-button:hover{
+          border-color:var(--secondary);
+          background-color:rgba(22,22,37,1);
+          color:white;
+      }
+      
+       #response-message {
+    color: green;
+    font-weight: bold;
+  }
+    </style>
+  </head>
+  <body>
+<!--header-->
+<section class="w3l-header">
+  <header id="site-header" class="fixed-top">
+    <div class="container">
+      <nav class="navbar navbar-expand-lg navbar-dark stroke">
+        <a class="navbar-brand" href="index.php">
+          <img class="logo-height" src="assets/images/Mavericks_new_logo-2.png" alt="Your logo" title="Your logo"/> Team Mavericks
+      </a>
+        <!-- if logo is image enable this   
+    <a class="navbar-brand" href="#index.html">
+        <img src="image-path" alt="Your logo" title="Your logo" style="height:35px;" />
+    </a> -->
+        <button class="navbar-toggler  collapsed bg-gradient" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02"
+          aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon fa icon-expand fa-bars"></span>
+          <span class="navbar-toggler-icon fa icon-close fa-times"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item @@home-active">
+              <a class="nav-link" href="index.php">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item @@events-active">
+                <a class="nav-link" href="ourEvents.html">Events</a>
+              </li>
+            <li class="nav-item @@about-active">
+              <a class="nav-link" href="about.html">About</a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+            
+          </ul>
+        </div>
+      </nav>
+    </div>
+  </header>
+  <!--/header-->
+</section>
+<!-- contact breadcrumbs -->
+<nav id="breadcrumbs" class="breadcrumbs">
+  <div class="container page-wrapper text-center">
+    <div class="header-section">
+      <h2 class="mb-2">Contact Us</h2>
+    </div>
+    <a href="index.php">Home</a> » <span class="breadcrumb_last" aria-current="page">Contact</span>
+  </div>
+</nav>
+<!-- /contact breadcrumbs -->
+<!-- contact-form -->
+<section class="w3l-contact" id="contact">
+  <div class="contact-infubd py-5">
+    <div class="container py-lg-3">
+      <div class="contact-grids row">
+        <div class="col-lg-6 contact-left">
+          <div class="partners">
+            <div class="cont-details">
+              <h5>Get in touch</h5>
+              <!--<p class="mt-3 mb-4">Hi there, We are available 24/7 by fax, e-mail or by phone. Drop us line so we can talk-->
+              <!--  futher about that.</p>-->
+            </div>
+            <div class="hours">
+              <h6 class="mt-4">Email:</h6>
+              <p> <a href="mailto:mavericksbodhantra@gmail.com">
+                mavericksbodhantra@gmail.com</a></p>
+              <h6 class="mt-4">Visit Us:</h6>
+              <p>KIT's College of Engineering (An Autonomous Institute) Gokul Shirgaon, Kolhapur, Maharashtra 416234</p>
+              <h6 class="mt-4">Contact:</h6>
+              <p class="margin-top"><a href="tel:9766246585">9766246585</a></p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6 mt-lg-0 mt-5 contact-right">
+          <form action="query.php" method="POST" class="signin-form">
+            <div class="input-grids">
+              <div class="form-group">
+                <input type="text" name="name" id="w3lName" placeholder="Your Name*" class="contact-input" required/>
+              </div>
+              <div class="form-group">
+                <input type="email" name="email" id="w3lSender" placeholder="Your Email*" class="contact-input" required/>
+              </div>
+              <div class="form-group">
+                <input type="text" name="subject" id="w3lSubect" placeholder="Subject*" class="contact-input" required/>
+              </div>
+            </div>
+            <div class="form-group">
+              <textarea name="message" id="message" placeholder="Type your message here*" required></textarea>
+            </div>
+            <div style="display:flex;justify-content:center;align-items:center">
+              <button id="submit-button" class="btn btn-primary theme-button">Send Message</button>
+              
+            </div>
+            <br>
+            <div id="response-message" style="display:flex;justify-content:center;align-items:center"></div>
+          </form>
+        </div>
+
+      </div>
+      <div class="map mt-5 pt-md-5">
+        <h5>Map</h5>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3822.4536927264817!2d74.25993917414128!3d16.654165123515508!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc0ffb509926fa9%3A0x9af43eb75ec2804!2sKIT&#39;s%20College%20of%20Engineering%20(An%20Autonomous%20Institute)!5e0!3m2!1sen!2sin!4v1683640684189!5m2!1sen!2sin" width="600" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </div>
+    </div>
+</section>
+<!-- /contact-form -->
+
+<footer>
+  <!-- footer -->
+  <section class="w3l-footer">
+    <div class="w3l-footer-16-main py-5">
+      <div class="container">
+        <div class="row footer-border">
+          <div class="col-lg-12 text-center col-md-5 column pr-md-0">
+            <a class="navbar-brand" href="index.php" id="wht">
+              <img class="logo-height" src="assets/images/Mavericks_new_logo-2.png" alt="Your logo" title="Your logo"/> Team Mavericks
+          </a>
+            <p>We, Team Mavericks symbolize a team having unorthodox views <br>
+               and innovative ideas. "Maverick" means an independent person or <br>
+                a team who is similar to a bird that loves to live a free and prosperous life.</p>
+            <ul class="mt-4 contact">
+              <li>
+                <p><span class="fa fa-phone" aria-hidden="true"></span> <a href="tel:+919766246585">9766246585</a></p>
+              </li>
+              <li>
+                <p><span class="fa fa-envelope" aria-hidden="true"></span> <a href="email:mavericksbodhantra@gmail.com">mavericksbodhantra@gmail.com</a></p>
+              </li>
+            </ul>
+          </div>
+          
+        </div>
+        <div class="below-section pt-4 mt-5 text-center">
+          <div class="columns-2">
+            <ul class="social">
+              <li><a href="https://www.facebook.com/TeamMavericksKIT"><span class="fa fa-facebook" aria-hidden="true"></span></a>
+              </li>
+              <li><a href="https://www.linkedin.com/in/teammavericks/?originalSubdomain=in"><span class="fa fa-linkedin" aria-hidden="true"></span></a>
+              </li>
+              <li><a href="#twitter"><span class="fa fa-twitter" aria-hidden="true"></span></a>
+              </li>
+              <li><a href="https://www.instagram.com/teammavericks.kit/"><span class="fa fa-instagram" aria-hidden="true"></span></a>
+              </li>
+              <li><a href="https://wa.me/9766246585"><span class="fa fa-whatsapp" aria-hidden="true"></span></a>
+              </li>
+            </ul>
+          </div>
+          <div class="columns mt-3">
+            <p>&copy; 2023 Team Mavericks. All rights reserved.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- move top -->
+    <button onclick="topFunction()" id="movetop" title="Go to top">
+      <span class="fa fa-angle-up"></span>
+    </button>
+    <script>
+      // When the user scrolls down 20px from the top of the document, show the button
+      window.onscroll = function () {
+        scrollFunction()
+      };
+
+      function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+          document.getElementById("movetop").style.display = "block";
+        } else {
+          document.getElementById("movetop").style.display = "none";
+        }
+      }
+
+      // When the user clicks on the button, scroll to the top of the document
+      function topFunction() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+      }
+    </script>
+    <!-- //move top -->
+    <script>
+      $(function () {
+        $('.navbar-toggler').click(function () {
+          $('body').toggleClass('noscroll');
+        })
+      });
+    </script>
+  </section>
+  <!-- //footer -->
+</footer>
+
+<!--on submit of query-->
+<script>
+  document.getElementById('submit-button').addEventListener('click', function() {
+    // Perform any necessary actions here, such as sending a request to the server
+
+    // Update the response message
+    var responseMessage = document.getElementById('response-message');
+    responseMessage.textContent = 'Query submitted!';
+    
+    var duration = 5000; // Duration in milliseconds (5 seconds)
+    setTimeout(function() {
+      responseMessage.textContent = ''; // Empty the message after the duration
+    }, duration);
+  });
+</script>
+
+<!-- jQuery JS -->
+<!-- <script src="assets/js/jquery-3.4.1.slim.min.js"></script> -->
+<!-- jQuery JS -->
+<script src="assets/js/jquery-1.9.1.min.js"></script>
+
+<!-- Template JavaScript -->
+
+<!-- owl carousel -->
+<script src="assets/js/owl.carousel.js"></script>
+
+
+<!-- magnific popup -->
+<script src="assets/js/jquery.magnific-popup.min.js"></script>
+<script>
+  $(document).ready(function () {
+    $('.popup-with-zoom-anim').magnificPopup({
+      type: 'inline',
+
+      fixedContentPos: false,
+      fixedBgPos: true,
+
+      overflowY: 'auto',
+
+      closeBtnInside: true,
+      preloader: false,
+
+      midClick: true,
+      removalDelay: 300,
+      mainClass: 'my-mfp-zoom-in'
+    });
+
+    $('.popup-with-move-anim').magnificPopup({
+      type: 'inline',
+
+      fixedContentPos: false,
+      fixedBgPos: true,
+
+      overflowY: 'auto',
+
+      closeBtnInside: true,
+      preloader: false,
+
+      midClick: true,
+      removalDelay: 300,
+      mainClass: 'my-mfp-slide-bottom'
+    });
+  });
+</script>
+
+<!-- responsive tabs -->
+<script src="assets/js/easyResponsiveTabs.js"></script>
+
+<!--Plug-in Initialisation-->
+<script type="text/javascript">
+  $(document).ready(function () {
+    //Horizontal Tab
+    $('#parentHorizontalTab').easyResponsiveTabs({
+      type: 'default', //Types: default, vertical, accordion
+      width: 'auto', //auto or any width like 600px
+      fit: true, // 100% fit in a container
+      tabidentify: 'hor_1', // The tab groups identifier
+      activate: function (event) { // Callback function if tab is switched
+        var $tab = $(this);
+        var $info = $('#nested-tabInfo');
+        var $name = $('span', $info);
+        $name.text($tab.text());
+        $info.show();
+      }
+    });
+  });
+</script>
+
+<!-- stats number counter-->
+<script src="assets/js/jquery.waypoints.min.js"></script>
+<script src="assets/js/jquery.countup.js"></script>
+
+<!-- //stats number counter -->
+
+<!-- disable body scroll which navbar is in active -->
+<script>
+  $(function () {
+    $('.navbar-toggler').click(function () {
+      $('body').toggleClass('noscroll');
+    })
+  });
+</script>
+<!-- disable body scroll which navbar is in active -->
+
+<!--/MENU-JS-->
+<script>
+  $(window).on("scroll", function () {
+    var scroll = $(window).scrollTop();
+
+    if (scroll >= 80) {
+      $("#site-header").addClass("nav-fixed");
+    } else {
+      $("#site-header").removeClass("nav-fixed");
+    }
+  });
+
+  //Main navigation Active Class Add Remove
+  $(".navbar-toggler").on("click", function () {
+    $("header").toggleClass("active");
+  });
+  $(document).on("ready", function () {
+    if ($(window).width() > 991) {
+      $("header").removeClass("active");
+    }
+    $(window).on("resize", function () {
+      if ($(window).width() > 991) {
+        $("header").removeClass("active");
+      }
+    });
+  });
+</script>
+<!--//MENU-JS-->
+
+
+<!--theme switcher dark and light mode script-->
+<script>
+  const bodyElement = document.querySelector('body');
+  const themeToggle = document.querySelector('#themeToggle');
+  const darkModeMql = window.matchMedia('(prefers-color-scheme: dark)');
+
+  const currentTheme = localStorage.getItem('theme') ? localStorage.getItem('theme') : userPreference(darkModeMql);
+
+  if (currentTheme) {
+    bodyElement.classList.add(currentTheme);
+
+    if (currentTheme === 'dark') {
+      themeToggle.checked = true;
+    }
+  }
+
+  function userPreference(e) {
+    if (e.matches) {
+      bodyElement.classList.add("dark");
+      return "dark"
+    } else {
+      bodyElement.classList.remove("dark");
+      return ""
+    }
+  }
+
+  darkModeMql.addListener(userPreference);
+
+  function themeSwitcher(e) {
+    if (e.target.checked) {
+      bodyElement.classList.add('dark');
+      localStorage.setItem('theme', 'dark');
+    } else {
+      bodyElement.classList.remove('dark');
+      localStorage.setItem('theme', '');
+    }
+  }
+
+  themeToggle.addEventListener('change', themeSwitcher);
+</script>
+<!--//theme switcher dark and light mode script-->
+
+
+<!-- Bootstrap JS -->
+<script src="assets/js/bootstrap.min.js"></script>
+
+</body>
+
+</html>
